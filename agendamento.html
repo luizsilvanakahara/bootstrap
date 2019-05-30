@@ -1,0 +1,347 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Banco Original</title>
+	<link rel="stylesheet" href="js/daterangepicker/daterangepicker.min.css" />
+	<link rel="stylesheet" type="text/css" href="js/owl.carousel/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="js/datatables/datatables.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/agendamento.css">
+</head>
+<body>
+
+<header id="header">
+	<div class="breadcrumb">
+		<a class="nav-bt" href=""></a>
+		<a href="">Clientes</a><span class="espacador"></span>
+		<a href="">Visão Geral</a><span class="espacador"></span>
+		<a href="">Conta</a><span class="espacador"></span> Agendamento
+	</div>
+	<div class="right">
+		<a href="" class="inbox-bt">Inbox</a>
+		<a href="" class="faq-bt">FAQ</a>
+	</div>
+</header>
+
+<div class="resumo-cliente">
+	<div class="left">
+		<ul class="dados" id="bt-cliente">
+			<li class="cliente-nome"><label>Cliente</label> João Andrade de Araujo Nogueira Santos</li>
+			<li class="cliente-chamado"><label>Como deseja ser chamado</label> Sr. João Andrade</li>
+			<li class="cliente-segmento"><label>Segmento</label> Affluent 1</li>
+			<li class="cliente-arrow"><span class="arrow"></span></li>
+		</ul>
+		<div class="rolagem-conta">
+			<h2 id="modal-rolagem-conta-bt">Conta <strong>805612-5</strong><span class="arrow"></span></h2>
+			<div id="modal-rolagem-conta" class="modal-select">
+				<h3>Qual Conta Corrente<br> você deseja exibir?</h3>
+				<ul>
+					<li class=""><label>803012-5<input type="radio" name="qtd" value="803012-5"></label></li>
+					<li class="checked"><label>805612-5<input type="radio" name="qtd" value="805612-5"></label></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="right">
+		<a href="" class="bt"><span class="num">12</span> Tarefas</a>
+		<a href="" class="bt"><span class="num">5</span> Memo File</a>
+	</div>
+	<div class="clearfix"></div>
+</div>
+
+<div id="expande-cliente" class="expande-cliente">
+	<div class="coluna">
+		<div class="destaque pessoal">
+			<h3><span class="icon icon-dados-pessoais"></span>Dados Pessoais</h3>
+			<ul class="dados">
+				<li><label>CPF</label> 390.283.093-02</li>
+				<li><label>Idade</label> 33 anos</li>
+				<li><label>Nascimento</label> 27/12/1983</li>
+				<li><label>Nome da mãe</label> Fabiana Sena de Andrade</li>
+				<li><label>Nome do pai</label> Roberto Sena de Andrade</li>
+				<li><label>Escolaridade</label> Ensino Superior com pós graduação</li>
+				<li><label>PEP</label> Não</li>
+				<li><label>Estado civíl</label> Casado com comunhão parcial de bens</li>
+			</ul>
+			<ul class="dados cinza">
+				<li><label>Nome do cônjuge</label> Fabia Sena de Andrade</li>
+				<li><label>CPF do cônjuge</label> 381.092.520-98</li>
+			</ul>
+		</div>
+		<ul class="dados-carteira">
+			<li>Cliente indicado por você / Carteira SP 10</li>
+		</ul>
+	</div>
+	<div class="coluna">
+		<h3><span class="icon icon-telefones"></span>Telefones</h3>
+		<ul class="dados principal">
+			<li>+ 55 (11) 98080-8003 <mini>Número principal</mini></li>
+		</ul>
+		<ul class="dados">
+			<li><label>Celular</label> + 55 (11) 98080-8003</li>
+			<li><label>Residencial</label> + 55 (11) 98080-8003</li>
+			<li><label>Adicional 1</label> + 55 (11) 98080-8003</li>
+			<li><label>Adicional 2</label> + 55 (11) 98080-8003</li>
+		</ul>
+		<h3><span class="icon icon-renda"></span>Renda do Cliente</h3>
+		<ul class="dados principal">
+			<li>R$ 12.900,00 <mini>Renda principal</mini></li>
+		</ul>
+		<ul class="dados">
+			<li><label>Presumida do motor</label> R$ 12.900,00 <mini>em 22/06/2017</mini></li>
+			<li><label>Declarada</label> R$ 12.900,00 <mini>em 22/06/2017</mini></li>
+			<li><label>Comprovada</label> R$ 12.900,00 <mini>em 22/06/2017</mini></li>
+			<li><label>Presumida da mesa</label> R$ 0,00</li>
+		</ul>
+	</div>
+	<div class="coluna">
+		<h3><span class="icon icon-campanha"></span>Campanhas</h3>
+		<ul class="dados">
+			<li><label>Código de campanha</label>PicPay</li>
+		</ul>
+		<h3><span class="icon icon-emails"></span>E-mail</h3>
+		<ul class="dados principal">
+			<li>joao.manocchio@original.com <mini>Endereço de e-mail principal</mini></li>
+		</ul>
+		<ul class="dados">
+			<li><label>Comercial</label> joao.m@empresa.com</li>
+		</ul>
+		<h3><span class="icon icon-enderecos"></span>Endereços</h3>
+		<div id="carousel-enderecos" class="carousel-enderecos owl-carousel">
+			<div class="carousel-item">
+				<ul class="dados principal">
+					<li>
+						<label>Residencial</label>
+						CEP 13100-908<br>
+						Alameda Santos 678, apto 46<br>
+						Jd.Paulista - São Paulo / SP 
+						<mini>Endereço principal</mini>
+					</li>
+				</ul>
+			</div>
+			<div class="carousel-item">
+				<ul class="dados">
+					<li>
+						<label>Endereço 2</label>
+						CEP 13100-908<br>
+						Alameda Santos 678, apto 46<br>
+						Jd.Paulista - São Paulo / SP 
+					</li>
+				</ul>
+			</div>
+			<div class="carousel-item">
+				<ul class="dados">
+					<li>
+						<label>Endereço 3</label>
+						CEP 13100-908<br>
+						Alameda Santos 678, apto 46<br>
+						Jd.Paulista - São Paulo / SP 
+					</li>
+				</ul>
+			</div>
+		</div>
+		<h3><span class="icon icon-profissao"></span>Profissão</h3>
+		<ul class="dados">
+			<li><label>Profissão</label>Bancário</li>
+			<li><label>Cargo</label> Coordenador administrativo</li>
+		</ul>
+	</div>
+	<div class="clearfix"></div>
+</div>
+
+<main class="main-left page-agendamento">
+	<div class="main-header">
+		<h2 id="modal-conta-bt">Conta <strong>805612-5</strong><span class="arrow"></span></h2>
+		<div id="modal-conta" class="modal-select">
+			<h3>Qual Conta Corrente<br> você deseja exibir?</h3>
+			<ul>
+				<li class=""><label>803012-5<input type="radio" name="qtd" value="803012-5"></label></li>
+				<li class="checked"><label>805612-5<input type="radio" name="qtd" value="805612-5"></label></li>
+			</ul>
+		</div>
+		<div class="right">
+			<ul class="dados">
+				<li><label>CPF</label>404.393049-05</li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="pesquisa" id="pesquisa">
+		<div class="bt-pesquisa" id="bt-pesquisa" style="display: block;">
+			<p class="verde">Pesquisa detalhada</p><hr>
+		</div>
+		<div class="pesquisa-box" id="pesquisa-box">
+			<a class="pesquisa-box-fechar" id="pesquisa-box-fechar">x</a>
+			<h3>Pesquisa detalhada</h3>
+			<form>
+				<div class="por-periodo" id="por-periodo">
+					<h4>Por período</h4>
+					<a id="modal-periodo-bt"class="exibir">Exibir <strong>Últimos 30 dias</strong><span class="arrow"></span></a>
+					<div id="modal-periodo" class="modal-select">
+						<h3>Qual período específico<br> você deseja exibir? </h3>
+						<ul>
+							<li class=""><label>Últimos 7 dias<input type="radio" name="qtd" value="7 dias"></label></li>
+							<li class="checked"><label>Últimos 30 dias<input type="radio" name="qtd" value="30 dias"></label></li>
+							<li class=""><label>Últimos 3 meses<input type="radio" name="qtd" value="3 meses"></label></li>
+							<li class=""><label>Últimos 6 meses<input type="radio" name="qtd" value="6 meses"></label></li>
+							<li class=""><label>Últimos 12 meses<input type="radio" name="qtd" value="12 meses"></label></li>
+						</ul>
+					</div>
+				</div>
+				<div class="por-data" id="por-data">
+					<h4>Por data específica</h4>
+					<ul class="dados" id="daterange">
+						<li><label>De <span class="dia-semana">QUA</span></label><input type="text" placeholder="dd/mm/aaaa" id="de"></li>
+						<li class="espacador"><span class="arrow"></span></li>
+						<li><label>Até <span class="dia-semana">QUA</span></label><input type="text" placeholder="dd/mm/aaaa" id="ate"></li>
+					</ul>
+				</div>
+				<div class="por-tipo" id="por-tipo">
+					<h4>Status do agendamento</h4>
+					<a id="modal-tipo-bt"class="exibir">Exibir <strong>Todos os tipos</strong><span class="arrow"></span></a>
+					<div id="modal-tipo" class="modal-select">
+						<h3>Quais status do agendamnto<br> você deseja exibir? </h3>
+						<ul>
+							<li class="checked"><label>Todos os tipos<input type="radio" name="status" value="Todos os tipos"></label></li>
+							<li class=""><label>Lorem ipsum<input type="radio" name="status" value="Lorem ipsum"></label></li>
+						</ul>
+					</div>
+				</div>
+				<div class="botao">
+					<input type="submit" value="Pesquisar" id="bt-pesquisar">
+				</div>
+			</form>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	
+	<div class="smartToolbar">	
+		<div class="smartQtd">
+			<div id="smartQtd-bt" class="smartQtd-bt disabled">
+				<p>Exibir <strong><span class="qtd-num">25</span> Resultados</strong><span class="arrow"></span></p>
+			</div>
+			<div id="smartQtd-modal" class="smartQtd-modal">
+				<h3>Quantos clientes você deseja exibir?</h3>
+				<ul>
+					<li class="checked"><label>25<input type="radio" name="qtd" value="25" checked></label></li>
+					<li><label>50<input type="radio" name="qtd" value="50"></label></li>
+					<li><label>75<input type="radio" name="qtd" value="75"></label></li>
+					<li><label>100<input type="radio" name="qtd" value="100"></label></li>
+				</ul>
+			</div>
+		</div>			
+		<div  class="smartColumns">
+			<div id="smartColumns-bt" class="smartColumns-bt">Configurar tabela</div>
+			<div id="smartColumns-modal" class="smartColumns-modal">
+				<h3>Selecione as colunas desejadas</h3>
+				<ul>
+					<li><a class="toggle-vis checked" data-column="0">Número da operação</a></li>
+					<li><a class="toggle-vis checked" data-column="1">Data de agendamento</a></li>
+					<li><a class="toggle-vis checked" data-column="2">Canal</a></li>
+					<li><a class="toggle-vis checked" data-column="3">Agendamento</a></li>
+					<li><a class="toggle-vis checked" data-column="4">Data programada</a></li>
+					<li><a class="toggle-vis checked" data-column="5">Valor</a></li>
+					<li><a class="toggle-vis checked" data-column="6">Histórico</a></li>
+				</ul>
+			</div>
+		</div>			
+		<div class="clearfix"></div>		
+	</div>
+	
+	<table id="agendamento" class="smartTable" width="100%">
+        <thead>
+            <tr>
+                <th class="col_nome">Número da operação</th>
+				<th class="col_data_agendamento">Data de agendamento</th>
+                <th class="col_canal">Canal</th>
+                <th class="col_agendamento">Agendamento</th>
+				<th class="col_data_programada">Data programada</th>
+				<th class="col_valor">Valor</th>
+				<th class="col_historico">Histórico</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+				<td class="col_nome"><strong>18896</strong></td>
+				<td class="col_data_agendamento">09/01/2017</td>
+				<td class="col_canal">Mobile</td>
+				<td class="col_agendamento">TED</td>
+				<td class="col_data_programada">02/01/2017</td>
+				<td class="col_historico">999.999.999,00</td>
+				<td class="col_historico">Pagamento com Cartão Original</td>
+            </tr>
+			<tr>
+				<td class="col_nome"><strong>18896</strong></td>
+				<td class="col_data_agendamento">09/01/2017</td>
+				<td class="col_canal">Mobile</td>
+				<td class="col_agendamento">TED</td>
+				<td class="col_data_programada">02/01/2017</td>
+				<td class="col_historico">999.999.999,00</td>
+				<td class="col_historico">Pagamento com Cartão Original</td>
+            </tr>
+			<tr>
+				<td class="col_nome"><strong>18896</strong></td>
+				<td class="col_data_agendamento">09/01/2017</td>
+				<td class="col_canal">Mobile</td>
+				<td class="col_agendamento">TED</td>
+				<td class="col_data_programada">02/01/2017</td>
+				<td class="col_historico">999.999.999,00</td>
+				<td class="col_historico">Pagamento com Cartão Original</td>
+            </tr>
+			<tr>
+				<td class="col_nome"><strong>18896</strong></td>
+				<td class="col_data_agendamento">09/01/2017</td>
+				<td class="col_canal">Mobile</td>
+				<td class="col_agendamento">TED</td>
+				<td class="col_data_programada">02/01/2017</td>
+				<td class="col_historico">999.999.999,00</td>
+				<td class="col_historico">Pagamento com Cartão Original</td>
+            </tr>
+			<tr>
+				<td class="col_nome"><strong>18896</strong></td>
+				<td class="col_data_agendamento">09/01/2017</td>
+				<td class="col_canal">Mobile</td>
+				<td class="col_agendamento">TED</td>
+				<td class="col_data_programada">02/01/2017</td>
+				<td class="col_historico">999.999.999,00</td>
+				<td class="col_historico">Pagamento com Cartão Original</td>
+            </tr>
+		</tbody>
+	</table>
+	
+	<div class="clearfix"></div>
+</main>
+
+<nav class="nav-right">
+	<ul>
+		<li><a class="" href="">Extrato</a></li>
+		<li><a class="" href="">Últimos lançamentos</a></li>
+		<li><a class="" href="">Lançamentos futuros</a></li>
+		<li><a class="" href="">Comprovantes</a></li>
+	</ul>
+	<ul>
+		<li><a class="open" href="">Agendamento</a></li>
+		<li><a class="" href="">Tarifas</a></li>
+		<li><a class="" href="">Depósito em dinheiro</a></li>
+		<li><a class="" href="">Débito automático</a></li>
+	</ul>
+	<ul>
+		<li><a class="" href="">Cheque especial</a></li>
+		<li><a class="" href="">Campanhas</a></li>
+		<li><a class="" href="">Coleta e entrega</a></li>
+		<li><a class="" href="">Portabilidade</a></li>
+	</ul>
+</nav>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/moment.min.js" type="text/javascript"></script>
+<script src="js/daterangepicker/jquery.daterangepicker.js"></script>
+<script src="js/owl.carousel/owl.carousel.min.js"></script>
+<script src="js/datatables/datatables.js"></script>
+<script src="js/common.js"></script>
+<script src="js/agendamento.js"></script>
+</body>
+</html>
